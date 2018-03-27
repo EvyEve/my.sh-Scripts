@@ -1,7 +1,7 @@
 #!/bin/bash
 #Date: 03/26/2018
 #Author: Eva Cedent
-#Co-Author: Joel Turbi
+#Contributor: Joel Turbi
 
 #Description: A general Shell script file to automate compiling of c++ program(s) 
 

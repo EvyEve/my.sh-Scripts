@@ -3,7 +3,7 @@
 #Author: Eva Cedent
 #Co-Author: Joel Turbi
 
-#A general Shell script file to automate compiling of c++ program(s) 
+#Description: A general Shell script file to automate compiling of c++ program(s) 
 
 echo
 echo "**********************************************************"
@@ -35,7 +35,7 @@ echo "Would you like to run $fileName (Y/N) ? "
 
 read answer
 
-if [ "$answer" = "y" ] || ["$answer" = "Y" ]; then
+if [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
 	echo "Here is the output from $fileName : "
 	echo "***************************************************"
 	echo
@@ -47,12 +47,12 @@ if [ "$answer" = "y" ] || ["$answer" = "Y" ]; then
 	read input
 	if [ "$input" = "y" ] || [ " $input " = "Y" ]; then
 		rm -f $fileName
-	else if [ "$input" = "n" ] || [ "$input" = "N" ]; then
+	elif [ "$input" = "n" ] || [ "$input" = "N" ]; then
 		echo "Goodbye!, Until Next Time :)"
 		exit
 	fi
 
-else if [ "$answer" = "n" ] || [ "$answer" = "N" ]; then
+elif [ "$answer" = "n" ] || [ "$answer" = "N" ]; then
 	echo "Goodbye!, Until Next Time :)"
 	exit
 fi
